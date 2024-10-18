@@ -1,0 +1,22 @@
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"reverse_complement.py" 27L, 797B[1;1H[38;5;130m  1 [m[34m#!/usr/bin/env python3[m
+[38;5;130m  2 [mgenes = {}
+[38;5;130m  3 with[m [36mopen[m([31m"test.seq.txt"[m,[31m"r"[m) [38;5;130mas[m test_file:
+[38;5;130m  4 [m    [38;5;130mfor[m line [38;5;130min[m test_file:
+[38;5;130m  5 [m[8Cgene_id,seq = line.split()
+[38;5;130m  6 [m[8Cgenes[gene_id] = seq
+[38;5;130m  7 
+  8 [m[34m#print(genes)[m
+[38;5;130m  9 [m[34m#print(genes[gene_id])[m
+[38;5;130m 10 [m[8Cseq1 = (genes[gene_id])
+[38;5;130m 11 [m[8Creverse_file = (seq[::-[31m1[m])
+[38;5;130m 12 [m[8C[34m#print(reverse_file)[m
+[38;5;130m 13 [m[8C[34m#print()[m
+[38;5;130m 14 [m[8Ccomplement_A = reverse_file.replace([31m'A'[m,[31m't'[m)
+[38;5;130m 15 [m[34m#print(complement_A)[m
+[38;5;130m 16 [m[8Ccomplement_T = complement_A.replace([31m'T'[m,[31m'a'[m)
+[38;5;130m 17 [m[34m#print(complement_T)[m
+[38;5;130m 18 [m[8Ccomplement_G = complement_T.replace([31m'G'[m,[31m'c'[m)
+[38;5;130m 19 [m[34m#print(complement_G)[m
+[38;5;130m 20 [m[8Ccomplement_C = complement_G.replace([31m'C'[m,[31m'g'[m)
+[38;5;130m 21 [m[8Cfinal = complement_C.upper()
+[38;5;130m 22 [m[8C[34m#print(final)[1;5H[?25h[?4m[23;1H[?2004l[>4;m[23;2t[23;1t[m[23;1H[K[23;1H[?1004l[?2004l[?1l>[?1049l[>4;m2 files to edit
