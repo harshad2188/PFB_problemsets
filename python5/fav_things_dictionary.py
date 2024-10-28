@@ -30,12 +30,12 @@ print(fav_thing2)
 print(fav_dict[fav_thing1])
 print(fav_dict[fav_thing2])'''
 
-'''#Question 8
+#Question 8
 for items in fav_dict:
     print(items)
 print('Enter your key:')
 x = input()
-print(fav_dict[x])'''
+print(fav_dict[x])
 
 #Question 9
 fav_dict['organism'] = 'drosophila'
